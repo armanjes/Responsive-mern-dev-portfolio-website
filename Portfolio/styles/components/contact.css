@@ -1,0 +1,89 @@
+#contact {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bg-gray-900),
+    var(--bg-gray-800),
+    var(--bg-blue-900)
+  );
+  color: white;
+}
+
+#contact .container .section-container h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  text-align: center;
+}
+
+#contact .form-container{
+  /* padding: 3px 12px; */
+}
+
+#contact .form-container .input-group {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 6px 0;
+}
+
+#contact .form-container .input-group .input {
+  border-bottom: 2px solid var(--text-gray-300);
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: transparent;
+}
+
+#contact .form-container .input-group .input::placeholder {
+  color: transparent;
+}
+
+#contact .form-container .input-group label {
+  position: absolute;
+  left: 2px;
+  top: -3.5px;
+  color: var(--text-gray-400);
+  transition: all 0.1236s ease-in-out;
+  font-size: 19px;
+}
+
+#contact .form-container .input-group:focus{
+    border-bottom: 2px solid var(--text-blue-500);
+
+}
+
+#contact .form-container .input-group 
+.input:not(:placeholder-shown) + label,
+#contact .form-container .input-group .input:focus + label,
+.input:is(:placeholder-shown) + label {
+  left: 2px;
+  top: -22.5px;
+  font-size: 15px;
+  color: var(--text-blue-500);
+}
+
+/* #contact .form-container .input-group .input:placeholder-shown + label {
+  left: 2px;
+  top: -22.5px;
+  font-size: 15px;
+  color: var(--text-blue-500);
+} */
+
+#contact .form-container .form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  gap: 0 8px;
+  background-color: var(--color-blue-600);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .1236s linear;
+}
+
+#contact .form-container .form-btn:hover {
+  background-color: var(--color-blue-700);
+}
+
+#contact .form-container .form-btn iconify-icon{
+  font-size: 20px;
+}

@@ -1,0 +1,56 @@
+:root {
+  --bg-gray-900: #111827;
+  --bg-gray-800: #1f2937;
+  --bg-gray-700: #374151;
+  --bg-blue-900: #1e3a8a;
+  --text-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --text-gray-300: #d1d5db;
+  --text-gray-400: #9ca3af;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+  scroll-padding-top: 2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  display: block;
+  object-fit: cover;
+  user-select: none;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  all: unset;
+}
+
+input,
+textarea {
+  all: unset;
+}
+
+textarea {
+  resize: vertical;
+  height: 160px;
+}
