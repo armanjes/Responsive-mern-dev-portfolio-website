@@ -21,9 +21,3 @@
     width: 80%;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .container{
-    width: 70%;
-  }
-}
