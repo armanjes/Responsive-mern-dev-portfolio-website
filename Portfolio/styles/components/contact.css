@@ -14,10 +14,6 @@
   text-align: center;
 }
 
-#contact .form-container{
-  /* padding: 3px 12px; */
-}
-
 #contact .form-container .input-group {
   position: relative;
   margin-bottom: 25px;
@@ -27,7 +23,6 @@
 #contact .form-container .input-group .input {
   border-bottom: 2px solid var(--text-gray-300);
   width: 100%;
-  /* border: 1px solid red; */
   background-color: transparent;
 }
 
@@ -44,9 +39,8 @@
   font-size: 19px;
 }
 
-#contact .form-container .input-group:focus{
+#contact .form-container .input-group .input:focus{
     border-bottom: 2px solid var(--text-blue-500);
-
 }
 
 #contact .form-container .input-group 
@@ -59,12 +53,10 @@
   color: var(--text-blue-500);
 }
 
-/* #contact .form-container .input-group .input:placeholder-shown + label {
-  left: 2px;
-  top: -22.5px;
-  font-size: 15px;
-  color: var(--text-blue-500);
-} */
+#contact .form-container .input-group 
+.input:not(:placeholder-shown) {
+  border-bottom: 2px solid var(--text-blue-500);
+}
 
 #contact .form-container .form-btn {
   display: flex;
@@ -75,7 +67,7 @@
   background-color: var(--color-blue-600);
   padding: 12px 24px;
   border-radius: 6px;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
   transition: all .1236s linear;
 }
@@ -86,4 +78,16 @@
 
 #contact .form-container .form-btn iconify-icon{
   font-size: 20px;
+  transition: all 0.236s ease;
+}
+
+@media screen and (min-width: 900px) {
+  #contact .form-container .form-btn iconify-icon{
+  transition: all 0.236s ease;
+  transform: rotate(45deg);
+}
+
+  #contact .form-container .form-btn:hover iconify-icon {
+  transform: rotate(0deg);
+}
 }
