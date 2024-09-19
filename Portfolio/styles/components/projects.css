@@ -13,12 +13,16 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  flex-wrap: wrap;
 }
 
 #project .card {
   border-radius: 14px;
   overflow: hidden;
+}
+
+#project .card img {
+  height: 170px;
+  object-fit: cover;
 }
 
 #project .card .card-body {
@@ -46,19 +50,24 @@
   #project .card-container {
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
-  #project .card {
-    flex-basis: 48%;
+  #project .card-container .card {
+    flex: 1;
+    flex-basis: 47%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #project .card-container {
-    /* gap: 26px; */
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
-  #project .card {
-    flex-basis: 31.6%;
+  #project .card-container .card {
+    flex-basis: 33.33%;
+    flex: 1;
   }
 }
