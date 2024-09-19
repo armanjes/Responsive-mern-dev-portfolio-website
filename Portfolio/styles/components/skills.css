@@ -4,7 +4,7 @@
 
 #skills .container .section-container h2 {
   color: white;
-  margin-bottom: 18px;
+  margin-bottom: 48px;
   font-size: 32px;
   text-align: center;
 }
@@ -35,19 +35,26 @@
   color: var(--color-blue-600);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   #skills .card-container {
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 1em;
   }
-
+  
   #skills .card-container .card {
-    flex: 1;
+    flex-basis: 48%;
+    flex-grow: 1;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   #skills .card-container {
-    column-gap: 24px;
+    justify-content: center;
+  }
+
+  #skills .card-container .card {
+    flex-basis: 40%;
+    flex-grow: 0;
   }
 }
