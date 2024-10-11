@@ -1,8 +1,6 @@
 const showBtn = document.querySelector(".show");
 const hideBtn = document.querySelector(".hide");
-
 const menuList = document.querySelector("#header nav");
-console.log(showBtn);
 
 showBtn.addEventListener("click", function () {
   if (showBtn.getAttribute("icon") === "mdi:menu") {
@@ -13,3 +11,7 @@ showBtn.addEventListener("click", function () {
     menuList.classList.remove("show-menu");
   }
 });
+
+// footer year
+const date = new Date();
+document.querySelector(".year").innerHTML = date.getFullYear();

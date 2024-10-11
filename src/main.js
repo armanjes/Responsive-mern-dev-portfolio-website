@@ -12,4 +12,4 @@ import "../styles/utils.css"
 
 // JavaScript
 import "./icons.js";
-import "./nav.js";
+import "./script.js";

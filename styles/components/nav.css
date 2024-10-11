@@ -11,12 +11,17 @@
   font-size: 30px;
 }
 
+#header .container .mobile-menu iconify-icon {
+  border: 1px solid ;
+  border-radius: 7px;
+}
+
 #header .header-container {
   padding: 1em 0;
 }
 
 #header nav {
-  transition: all .236s ease-in-out;
+  transition: all 0.236s ease-in-out;
 }
 
 #header nav {
@@ -49,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   #header .container {
-    padding: .3em 0;
+    padding: 0.3em 0;
   }
 
   #header .container .mobile-menu {
