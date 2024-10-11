@@ -12,7 +12,7 @@
 }
 
 #header .header-container {
-  padding: 1em 0;
+  padding: 8px 0;
 }
 
 #header nav {
@@ -21,7 +21,7 @@
 
 #header nav {
   position: absolute;
-  top: 64px;
+  top: 54px;
   left: 0;
   right: 0;
   background-color: var(--bg-gray-900);
