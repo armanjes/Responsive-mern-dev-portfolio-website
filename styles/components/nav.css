@@ -16,28 +16,21 @@
 }
 
 #header nav {
-  position: relative;
   transition: all .236s ease-in-out;
 }
 
-#header nav ul {
+#header nav {
   position: absolute;
-  top: -82.5vh;
+  top: 64px;
   left: 0;
-  background-color: var(--bg-gray-800);
-  width: 100%;
-  border-radius: 14px;
+  right: 0;
+  background-color: var(--bg-gray-900);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  max-height: 0px;
 }
 
 .show-menu {
-  top: 84.7vh;
-}
-
-.hide-menu {
-  top: -82.5vh;
+  max-height: 319px !important;
 }
 
 #header nav ul li a {
@@ -65,19 +58,19 @@
 
   #header nav {
     position: unset;
+    overflow: unset;
+    max-height: unset;
   }
 
   #header nav ul {
+    display: flex;
     flex-direction: row;
     column-gap: 40px;
     justify-content: end;
-    position: unset;
-    background-color: unset;
   }
 
   #header nav ul li a {
     display: block;
-    width: unset;
     padding: 0;
     text-transform: capitalize;
     transition: all 0.236s ease;
