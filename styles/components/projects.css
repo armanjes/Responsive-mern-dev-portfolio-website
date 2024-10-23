@@ -16,12 +16,13 @@
 }
 
 #project .card {
-  border-radius: 14px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 #project .card img {
   height: 170px;
+  max-width: inherit;
   object-fit: cover;
 }
 
@@ -46,7 +47,7 @@
   color: var(--text-blue-500);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   #project .card-container {
     flex-direction: row;
     gap: 20px;

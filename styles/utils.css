@@ -7,15 +7,6 @@
    padding: 3em 0;
 }
 
-/*
-.section-heading {}
-
-.box-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.2em;
-} */
-
 @media screen and (min-width: 768px) {
   .container{
     width: 80%;
