@@ -12,6 +12,13 @@ showBtn.addEventListener("click", function () {
   }
 });
 
+const ul = document.querySelector("#header nav ul")
+ul.addEventListener("click", function (e) {
+  showBtn.setAttribute("icon", "mdi:menu");
+  menuList.classList.remove("show-menu");
+})
+
+
 // footer year
 const date = new Date();
 document.querySelector(".year").innerHTML = date.getFullYear();
