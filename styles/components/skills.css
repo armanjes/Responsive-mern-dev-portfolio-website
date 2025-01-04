@@ -11,18 +11,38 @@
 
 #skills .card-container {
   display: flex;
-  flex-direction: column;
-  row-gap: 14px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
 #skills .card {
   background-color: #f8fafc;
   padding: 24px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
   align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  animation: ani-float 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes ani-float {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 
 #skills .card iconify-icon {
@@ -33,28 +53,16 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--color-blue-600);
+  user-select: none;
 }
 
 @media screen and (min-width: 768px) {
   #skills .card-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 1em;
-  }
-  
-  #skills .card-container .card {
-    flex-basis: 48%;
-    flex-grow: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #skills .card-container {
-    justify-content: center;
+    gap: 28px;
   }
 
-  #skills .card-container .card {
-    flex-basis: 40%;
-    flex-grow: 0;
+  #skills .card {
+    width: 160px;
+    height: 160px;
   }
 }
