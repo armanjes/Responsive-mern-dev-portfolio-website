@@ -29,7 +29,7 @@
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  animation: ani-float 5s ease-in-out infinite;
+  animation: ani-float 15s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
